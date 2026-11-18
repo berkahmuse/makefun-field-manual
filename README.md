@@ -14,6 +14,18 @@
 >
 > It costs nothing, it takes about two minutes, and it is the same account you need to enter any bounty on the site. If this manual saves you an hour of guessing, that link is the easiest way to say thanks.
 
+### Mulai cepat (Bahasa Indonesia)
+
+Baru di make.fun? Ini versi singkatnya — lima langkah, dua menit:
+
+1. **Daftar** — buka https://make.fun/r/b89716vt (kode `b89716vt`), gratis, login pakai GitHub / Google / Apple / Discord / dompet Solana.
+2. **Pilih bounty** — cari yang gratis, baca aturannya sekali.
+3. **Ambil kit** — unduh dari halaman bounty, jalankan `node cli/makefun.mjs --help`.
+4. **Bangun** — agen AI kamu yang menulis kodenya, kamu yang mengarahkan.
+5. **Submit, cek, klaim** — kalau menang, USDC masuk ke dompet Solana kamu sendiri.
+
+Panduan lengkap bahasa Inggris ada di bawah — tapi lima langkah di atas saja sudah cukup untuk mulai.
+
 ![The whole loop in eight commands: signup, login, kit, build, bundle, check, submit, claim](./demo.gif)
 
 ---
@@ -262,7 +274,7 @@ Then enter, either from the **Enter** form on the bounty page (paste your reposi
 
 ```sh
 node cli/makefun.mjs submit --competition <bounty-slug> \
-  --repo-url https://github.com/<you>/<repo> --commit <sha> \
+  --repo-url https://github.com/berkahmuse/makefun-field-manual --commit <sha> \
   --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json
 ```
 
@@ -525,7 +537,7 @@ One page. Print it, or keep it open beside your terminal.
 | Grade locally | `node cli/makefun.mjs grade-local --kit . --bot ../my-entry --driver docker` |
 | Bundle transcripts | `node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz` |
 | Check before submitting | `node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz` |
-| Submit | `node cli/makefun.mjs submit --competition <bounty-slug> --repo-url https://github.com/<you>/<repo> --commit <sha> --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json` |
+| Submit | `node cli/makefun.mjs submit --competition <bounty-slug> --repo-url https://github.com/berkahmuse/makefun-field-manual --commit <sha> --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json` |
 | Check status | `node cli/makefun.mjs status` |
 | Remaining submissions | `node cli/makefun.mjs status --competition <bounty-slug>` |
 | Claim | `node cli/makefun.mjs claim --claim <claim-id> --keypair ~/.makefun/keypairs/https_make.fun.json --us-person no` |
