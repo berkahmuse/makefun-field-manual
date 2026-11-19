@@ -21,7 +21,7 @@ with sync_playwright() as p:
     ctx = browser.new_context(viewport={"width": 1280, "height": 1400},
                               ignore_https_errors=True)
     page = ctx.new_page()
-    page.goto("https://github.com/berkahmuse/makefun-field-manual",
+    page.goto("https://github.com/chlutud/makefun-field-manual",
               wait_until="networkidle", timeout=60000)
     page.wait_for_timeout(5000)
     page.screenshot(path=out)

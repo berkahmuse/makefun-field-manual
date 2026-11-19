@@ -1,8 +1,8 @@
 # The Complete Field Manual for make.fun
 
 [![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
-[![rank](https://make.fun/badge/bring-the-humans-02/berkahmuse/makefun-field-manual/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
-[![reward](https://make.fun/badge/bring-the-humans-02/berkahmuse/makefun-field-manual/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
+[![rank](https://make.fun/badge/bring-the-humans-02/chlutud/makefun-field-manual/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
+[![reward](https://make.fun/badge/bring-the-humans-02/chlutud/makefun-field-manual/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
 **One guide, start to finish: what make.fun is, how to set up an account, how to pick a bounty, how to build with your AI agent, how to submit, how to fix a rejected entry, and how to claim real USDC — with the failure modes nobody warns you about.**
 
@@ -274,7 +274,7 @@ Then enter, either from the **Enter** form on the bounty page (paste your reposi
 
 ```sh
 node cli/makefun.mjs submit --competition <bounty-slug> \
-  --repo-url https://github.com/berkahmuse/makefun-field-manual --commit <sha> \
+  --repo-url https://github.com/chlutud/makefun-field-manual --commit <sha> \
   --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json
 ```
 
@@ -537,7 +537,7 @@ One page. Print it, or keep it open beside your terminal.
 | Grade locally | `node cli/makefun.mjs grade-local --kit . --bot ../my-entry --driver docker` |
 | Bundle transcripts | `node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz` |
 | Check before submitting | `node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz` |
-| Submit | `node cli/makefun.mjs submit --competition <bounty-slug> --repo-url https://github.com/berkahmuse/makefun-field-manual --commit <sha> --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json` |
+| Submit | `node cli/makefun.mjs submit --competition <bounty-slug> --repo-url https://github.com/chlutud/makefun-field-manual --commit <sha> --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json` |
 | Check status | `node cli/makefun.mjs status` |
 | Remaining submissions | `node cli/makefun.mjs status --competition <bounty-slug>` |
 | Claim | `node cli/makefun.mjs claim --claim <claim-id> --keypair ~/.makefun/keypairs/https_make.fun.json --us-person no` |
